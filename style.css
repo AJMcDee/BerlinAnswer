@@ -1,0 +1,142 @@
+body {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+/* HEADER SETTINGS */
+
+header {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+#logotop {
+  float: left;
+  height: 40px;
+  margin-left: 20px;
+}
+
+#hamburger {
+  float: right;
+  height: 40px;
+  margin-right: 20px
+}
+
+/* MAIN IMAGE AND TITLE */
+
+main {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-style: italic;
+  color: white;
+}
+
+a#getstartedbutton {
+  background-color: yellow;
+  color: orangered;
+  border: 2px solid orangered;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#topsection {
+  position: relative;
+  text-align: center;
+  height: 70%;
+}
+
+#reichstag {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+}
+
+#overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Info section below the fold */
+
+.smallinfocontainer {
+  width: 100%;
+  background-color: lightgrey;
+  margin-top: -5px;
+}
+
+.smallinfo h3 {
+  margin-bottom: 0;
+}
+
+.smallinfo p {
+  margin-top: 0;
+}
+
+.smallinfo {
+  width: 40%;
+  height: 100px;
+  display: inline-block;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.smallinfo td {
+  vertical-align: top;
+}
+
+.smallinfo img {
+  width: 40px;
+  padding: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: grey;
+  padding: 10px;
+  color: white;
+  font-size: 0.7rem;
+}
+
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  .smallinfo {
+    display: block;
+    width: 90%;
+    font-size: 1.1rem;
+    height: auto;
+  }
+
+  header {
+    height: 35px;
+  }
+
+  #logotop, #hamburger {
+    height: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+
+}
