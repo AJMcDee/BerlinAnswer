@@ -3,16 +3,20 @@
   padding: 0;
 }
 
+html {
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-flow: column nowrap;
-
-  /* Change for mobile */
+  min-height: 100vh;
   width: 100%;
 }
 
 header {
   display: flex;
+  box-sizing: border-box;
   justify-content: space-between;
   padding: 0px 10px;
 }
@@ -24,13 +28,13 @@ header img {
 main {
   display: flex;
   flex-flow: column nowrap;
+  flex-grow: 1;
+  background-color: lightgrey;
 }
-
 
 #topsection {
   position: relative;
   text-align: center;
-  height: 70%;
 }
 
 #reichstag {
@@ -61,7 +65,7 @@ a#getstartedbutton {
   border-radius: 20px;
   font-weight: bold;
   text-decoration: none;
-} 
+}
 
 .smallinfocontainer {
   display: flex;
@@ -75,7 +79,6 @@ a#getstartedbutton {
   display: flex;
   flex-basis: 45%;
   margin: 15px;
-  flex-grow: 0;
 }
 
 .smallinfo img {
@@ -90,20 +93,29 @@ footer {
   padding: 10px;
   color: white;
   font-size: 0.7rem;
+  height: 30px;
 }
 
 @media screen and (min-width: 800px) {
+  .smallinfocontainer {
+    flex-flow: row wrap;
+    padding: 40px 0;
+    font-size: 1.8em;
+  }
 
+  header > img {
+    padding: 0px 30px;
+    height: 100px;
+  }
 
-.smallinfocontainer {
-  flex-flow: row wrap;
-  padding: 40px 0;
-}
+  h1,
+  a#getstartedbutton {
+    font-size: 4rem;
+  }
 
-header > img {
-  padding: 0px 30px;
-}
-
+  footer {
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (max-width: 300px) {
